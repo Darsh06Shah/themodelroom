@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Model Room: what's inside the kits</title>
+<style>
+  :root{--navy:#1F2A44;--blue:#2E5AAC;--light:#EAF1FB;--grey:#555;--green:#1B7F4B;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#222;line-height:1.6;}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 22px;}
+  header{background:var(--navy);color:#fff;padding:18px 0;}
+  header a{color:#cdd9ee;text-decoration:none;font-size:14px;}
+  h1{font-size:34px;color:var(--navy);padding:40px 0 6px;}
+  .sub{color:var(--grey);margin-bottom:30px;}
+  .kit{background:#fff;border:1px solid #e3e9f2;border-radius:12px;padding:26px;margin-bottom:26px;}
+  .kit h2{color:var(--navy);font-size:22px;margin-bottom:4px;}
+  .price{color:var(--green);font-weight:800;font-size:20px;margin-bottom:16px;}
+  .box{background:var(--light);border:1px solid #dce6f5;border-radius:10px;padding:16px 18px;margin:10px 0;font-size:14.5px;}
+  .box b{color:var(--blue);}
+  ul{margin:6px 0 6px 20px;font-size:14px;color:#333;}
+  li{margin-bottom:5px;}
+  .q{background:#fff;border-left:4px solid var(--blue);border-radius:6px;padding:12px 16px;margin:10px 0;}
+  .q .t{font-weight:700;color:var(--navy);}
+  .q .a{color:#444;font-size:13.5px;margin-top:4px;}
+  footer{background:#0f1626;color:#9fb0cc;padding:26px 0;font-size:14px;margin-top:20px;}
+  footer a{color:#cdd9ee;}
+</style></head><body>
+<header><div class="wrap"><a href="index.html">&larr; Back to The Model Room</a></div></header>
+<div class="wrap">
+<h1>What's inside the kits</h1>
+<div class="sub">Real files. Every line below is pulled straight from the actual workbook or deck, not a picture.</div>
+
+<div class="kit">
+  <h2>Modeling Test Pack</h2>
+  <div class="price">$29 one-time</div>
+  <div class="box"><b>3-Statement Model</b> — tabs: Config, Assumptions, Income Statement, Balance Sheet, Cash Flow, README. Income statement rows:</div>
+  <ul><li>Revenue</li>
+<li>  COGS</li>
+<li>Gross profit</li>
+<li>  Operating expense</li>
+<li>EBITDA</li>
+<li>  D&amp;A</li>
+<li>EBIT</li>
+<li>  Interest expense</li>
+<li>Pre-tax income (EBT)</li>
+<li>  Taxes</li>
+<li>Net income</li></ul>
+  <div class="box"><b>Finance Models workbook</b> tabs: LBO, DCF, Cap Table. Live outputs: LBO 4.39x MOIC / 34.4% IRR, DCF enterprise value 1,405, cap table 100%.</div>
+</div>
+
+<div class="kit">
+  <h2>Interview Question Bank</h2>
+  <div class="price">$19 one-time</div>
+  <div class="box">Real questions, tagged by firm and difficulty. Sample:</div>
+  <div class="q"><div class="t">Walk me through the three financial statements.</div><div class="a">Income Statement (revenue→net income), Balance Sheet (assets=liabilities+equity), Cash Flow (CFO+CFI+CFF). Net income flows from IS to BS retained earnings and ...</div></div>
+<div class="q"><div class="t">A $10 increase in depreciation — walk through the impact on all three statements.</div><div class="a">IS: pre-tax income -$10, net income -$7.50 (at 25%). CF: +$10 add-back → net cash +$2.50. BS: cash +$2.50, PP&amp;E -$10 (net), retained earnings -$7.50. Assets and...</div></div>
+<div class="q"><div class="t">If a company buys inventory with cash, what happens to the statements?</div><div class="a">IS: nothing. CF: CFO unchanged, CFI -$X (or treated as working capital). BS: inventory +$X, cash -$X. Total assets flat. No P&amp;L impact....</div></div>
+<div class="q"><div class="t">What happens if a company issues $100 of debt to buy back stock?</div><div class="a">IS: interest expense up (reduces NI slightly). CF: CFF +$100 (debt) -$100 (buyback). BS: cash +$100 then -$100, debt +$100, equity -$100. Net: L+E unchanged, le...</div></div>
+<div class="q"><div class="t">Compare DCF, comparable companies, and precedent transactions. When does each give the highest value?</div><div class="a">DCF reflects standalone intrinsic value (highest when growth/FCF strong and rates low). Comps reflect current market mood. Precedents include control premiums (...</div></div>
+<div class="q"><div class="t">Walk me through a DCF. What are the key drivers?</div><div class="a">Project unlevered FCF, discount at WACC, add terminal value (Gordon growth or exit multiple). Key drivers: revenue growth, margins, WACC, terminal growth. Sensi...</div></div>
+</div>
+
+<div class="kit">
+  <h2>Pitch Deck / Deal Teardown</h2>
+  <div class="price">$14 one-time</div>
+  <div class="box"><b>Deck slides (bank-style 16:9):</b></div>
+  <ul><li><b>Slide 1:</b> {{COMPANY NAME}} | {{One-line: what you do, for whom, why now}} | Confidential — {{Month Y</li>
+<li><b>Slide 2:</b> 1 · The Problem | {{Pain point #1 — who feels it, how often, what it costs them}}</li>
+<li><b>Slide 3:</b> 2 · Solution | {{What you built — the 1-liner plus the 'aha'}}</li>
+<li><b>Slide 4:</b> 3 · Product | {{Screenshot / mock / demo link}} | Feature 1 → {{benefit}}</li>
+<li><b>Slide 5:</b> 4 · Traction | {{MRR}} | Monthly recurring | {{% MoM}} | Growth | {{#}} | Customers | {{%}</li>
+<li><b>Slide 6:</b> 5 · Business Model | Pricing: {{tier 1}} / {{tier 2}} / {{tier 3}}</li>
+<li><b>Slide 7:</b> 6 · Team | {{Founder 1}} — {{relevant edge, e.g. 'built $X models at [bank]'}}</li>
+<li><b>Slide 8:</b> The Ask | Raising ${{amount}} {{round}} | Use of funds: {{% product}} / {{% GTM}} / {{% op</li>
+<li><b>Slide 9:</b> Appendix · How we model it | Built the way banks build it — full three-statement integrity</li></ul>
+</div>
+
+<div class="kit">
+  <h2>The Full Vault (membership)</h2>
+  <div class="price">$19 / month</div>
+  <div class="box">Everything above, plus the weekly markets recap, new model and question drops, and your target-bank study path.</div>
+</div>
+
+</div>
+<footer><div class="wrap">The Model Room. Recruiting firepower for future bankers. <a href="mailto:hello@themodelroom.com">hello@themodelroom.com</a></div></footer>
+</body></html>
