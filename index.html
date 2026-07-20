@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Model Room — Land the banking offer. Models, real interview questions, and markets that matter.</title>
+<style>
+  :root{--navy:#1F2A44;--blue:#2E5AAC;--light:#EAF1FB;--grey:#555;--green:#1B7F4B;--amber:#B8860B;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#222;line-height:1.6;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px;}
+  header{background:var(--navy);color:#fff;padding:18px 0;}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;}
+  .logo{font-weight:800;font-size:20px;letter-spacing:.5px;}
+  .logo span{color:#7FA8E8;}
+  nav a{color:#cdd9ee;text-decoration:none;margin-left:20px;font-size:14px;}
+  nav a:hover{color:#fff;}
+  .hero{background:linear-gradient(135deg,var(--navy),#33476f);color:#fff;padding:70px 0 60px;}
+  .hero h1{font-size:44px;line-height:1.12;font-weight:800;max-width:780px;}
+  .hero h1 em{color:#9DC0FF;font-style:normal;}
+  .hero p{font-size:19px;color:#d6e2f5;margin:20px 0 30px;max-width:660px;}
+  .cta{display:inline-block;background:#fff;color:var(--navy);font-weight:700;padding:15px 30px;border-radius:8px;text-decoration:none;font-size:16px;}
+  .cta:hover{background:#e6ecf7;}
+  .cta.alt{background:var(--amber);color:#fff;}
+  .pill{display:inline-block;background:rgba(255,255,255,.12);color:#cfe0fb;padding:6px 14px;border-radius:99px;font-size:13px;margin-bottom:18px;}
+  .diff{padding:60px 0;background:#fff;}
+  .diff h2{font-size:30px;color:var(--navy);margin-bottom:8px;}
+  .diff .sub{color:var(--grey);margin-bottom:36px;font-size:17px;}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  .card{background:var(--light);border-radius:12px;padding:24px;border:1px solid #dce6f5;}
+  .card h3{color:var(--blue);font-size:19px;margin-bottom:8px;}
+  .card p{color:#444;font-size:14.5px;}
+  .num{display:inline-flex;width:32px;height:32px;background:var(--navy);color:#fff;border-radius:8px;align-items:center;justify-content:center;font-weight:700;margin-right:9px;}
+  .prod{padding:60px 0;background:#f7f9fc;}
+  .prod h2{font-size:30px;color:var(--navy);margin-bottom:6px;}
+  .prod .sub{color:var(--grey);margin-bottom:32px;font-size:17px;}
+  .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .p{background:#fff;border:1px solid #e3e9f2;border-radius:12px;padding:24px;}
+  .p h4{color:var(--navy);font-size:17px;margin-bottom:7px;}
+  .p p{color:#555;font-size:13.5px;margin-bottom:12px;}
+  .price{font-size:25px;font-weight:800;color:var(--green);}
+  .price small{font-size:12px;color:#888;font-weight:500;}
+  .qof{padding:60px 0;background:#fff;}
+  .qof h2{font-size:30px;color:var(--navy);margin-bottom:6px;}
+  .qof .sub{color:var(--grey);margin-bottom:26px;font-size:16px;}
+  .qbox{background:var(--light);border:1px solid #dce6f5;border-radius:14px;padding:26px;}
+  .qbox .q{font-size:19px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+  .qbox .a{color:#333;font-size:15px;}
+  .qbox .tag{display:inline-block;background:var(--navy);color:#fff;font-size:12px;padding:3px 10px;border-radius:99px;margin-right:6px;margin-top:12px;}
+  .news{padding:60px 0;background:#f7f9fc;}
+  .news h2{font-size:30px;color:var(--navy);margin-bottom:6px;}
+  .news .sub{color:var(--grey);margin-bottom:28px;font-size:16px;}
+  .nb{background:#fff;border-left:4px solid var(--blue);border-radius:8px;padding:18px 22px;margin-bottom:14px;}
+  .nb h4{color:var(--navy);font-size:16px;margin-bottom:4px;}
+  .nb p{color:#555;font-size:14px;}
+  .quiz{background:#fff;padding:60px 0;}
+  .quiz h2{font-size:28px;color:var(--navy);margin-bottom:6px;}
+  .quiz .sub{color:var(--grey);margin-bottom:24px;font-size:15px;}
+  .quizbox{max-width:620px;background:var(--light);padding:28px;border-radius:14px;border:1px solid #dce6f5;width:100%;}
+  .quiz label{display:block;font-weight:600;color:var(--navy);margin:14px 0 6px;}
+  .quiz select,.quiz input{width:100%;padding:11px;border:1px solid #c3d2e8;border-radius:8px;font-size:15px;}
+  .quiz button{margin-top:20px;background:var(--blue);color:#fff;border:0;padding:13px 26px;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;}
+  .result{margin-top:18px;padding:16px;background:#fff;border:1px dashed var(--blue);border-radius:10px;display:none;color:#222;}
+  .paywall{background:var(--navy);color:#fff;padding:60px 0;text-align:center;}
+  .paywall h2{font-size:32px;margin-bottom:12px;}
+  .paywall p{color:#cdd9ee;font-size:18px;margin-bottom:26px;}
+  .trust{background:#fff;padding:28px 0;border-top:1px solid #eee;}
+  .trust .wrap{display:flex;gap:26px;flex-wrap:wrap;justify-content:center;color:var(--grey);font-size:14px;}
+  footer{background:#0f1626;color:#9fb0cc;padding:32px 0;font-size:14px;}
+  footer a{color:#cdd9ee;}
+  @media(max-width:760px){.grid,.pgrid{grid-template-columns:1fr;}.hero h1{font-size:32px;}nav{display:none;}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="logo">The Model<span>Room</span></div>
+    <nav><a href="#diff">Why us</a><a href="#products">Kits</a><a href="#qof">Question bank</a><a href="#news">Markets</a><a href="#quiz">Your path</a><a href="#join">Join</a></nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="pill">For students recruiting into investment banking</div>
+    <h1>Land the banking offer.<br/><em>Real models. Real interview questions. Real markets.</em></h1>
+    <p>Built by people who've sat the superday. The modeling test that ties out, the technicals firms actually ask, and a weekly markets recap so you can talk deals in the interview — all in one place.</p>
+    <a class="cta" href="#products">See the recruiting kits</a>
+    <a class="cta alt" href="https://themodelroom.substack.com" style="margin-left:12px;">Free markets recap →</a>
+  </div>
+</section>
+
+<section class="diff" id="diff">
+  <div class="wrap">
+    <h2>Why banking recruits choose The Model Room</h2>
+    <div class="sub">Generic template shops sell spreadsheets. We sell the offer.</div>
+    <div class="grid">
+      <div class="card"><h3><span class="num">1</span>Models that tie out</h3><p>The 3-statement + LBO + DCF set is fully live and balances to zero — exactly what the modeling test grades on. Not a static screenshot.</p></div>
+      <div class="card"><h3><span class="num">2</span>Real questions, by firm</h3><p>A growing bank of interview questions reported at GS, MS, JPM, Evercore, Centerview, KKR, Blackstone — with the answer the interviewer wants.</p></div>
+      <div class="card"><h3><span class="num">3</span>Markets you can talk about</h3><p>Weekly recap of the deals and moves that matter, written so you can drop them in "tell me about a deal you find interesting."</p></div>
+      <div class="card"><h3><span class="num">4</span>Built for YOUR path</h3><p>Set your target (bulge bracket / elite boutique / PE) on the quiz and we route your study plan, models, and questions to it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="qof" id="qof">
+  <div class="wrap">
+    <h2>Question of the week</h2>
+    <div class="sub">Pulled from real interviews. (Full bank in the vault — firm-tagged.)</div>
+    <div class="qbox">
+      <div class="q">"A $10 increase in depreciation — walk me through the impact on all three statements."</div>
+      <div class="a"><strong>Answer:</strong> IS — pre-tax income −$10, net income −$7.50 (at 25%). Cash Flow — +$10 add-back → net cash +$2.50. Balance Sheet — cash +$2.50, PP&E (net) −$10, retained earnings −$7.50. Both sides fall $7.50. It balances. <em>(This is the single most-asked technical — and most people miss the second-order cash tax effect.)</em></div>
+      <span class="tag">3-Statements</span><span class="tag">Core</span><span class="tag">All banks</span>
+    </div>
+  </div>
+</section>
+
+<section class="prod" id="products">
+  <div class="wrap">
+    <h2>The Recruiting Kits</h2>
+    <div class="sub">Every file is live (change one assumption, everything recalcs). Instant download.</div>
+    <div class="pgrid">
+      <div class="p"><h4>Modeling Test Pack</h4><p>3-statement + LBO + DCF + cap table, all live and balancing. The exact structure the superday gives you.</p><div class="price">$29<small> one-time</small></div></div>
+      <div class="p"><h4>Interview Question Bank</h4><p>Real technicals + behavioral, firm-tagged (GS/MS/JPM/Evercore/KKR/Blackstone), with model-backed answers.</p><div class="price">$19<small> one-time</small></div></div>
+      <div class="p"><h4>Pitch Deck / Deal Teardown</h4><p>Bank-style deck template + a real deal teardown you can actually cite in "tell me about a deal."</p><div class="price">$14<small> one-time</small></div></div>
+    </div>
+    <div style="margin-top:30px;background:#fff;border:1px solid #e3e9f2;border-radius:12px;padding:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;">
+      <div><strong style="color:var(--navy);font-size:19px;">The Full Vault — membership</strong><br/><span style="color:var(--grey);">All kits + weekly markets recap + new model & question drops + your target-bank study path.</span></div>
+      <div style="text-align:right;"><span class="price">$19<small>/mo</small></span> &nbsp; <a class="cta alt" href="https://gumroad.com/themodelroom" style="font-size:15px;padding:12px 22px;">Join</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="news" id="news">
+  <div class="wrap">
+    <h2>Markets recap — for people who need to sound sharp</h2>
+    <div class="sub">Every week in the free newsletter: 5 deals, 3 charts, 1 theme. So you can talk markets in any interview.</div>
+    <div class="nb"><h4>This week: M&A is back</h4><p>Megadeal volume up ~30% QoQ as rate-cut expectations return. Boutiques gaining share in tech/advisory. Know 1-2 names cold.</p></div>
+    <div class="nb"><h4>Chart to cite: the exit-multiple vs. rate trade</h4><p>Lower rates → higher EV/EBITDA. Be ready to explain why a DCF and a comps approach diverge right now.</p></div>
+    <div class="nb"><h4>Behavioral gold: "a deal you find interesting"</h4><p>Pick a live deal in your target bank's sector. We give you the talking points weekly so you're never blank.</p></div>
+    <a class="cta alt" href="https://themodelroom.substack.com" style="margin-top:8px;">Read the free recap →</a>
+  </div>
+</section>
+
+<section class="quiz" id="quiz">
+  <div class="wrap">
+    <h2>Your recruiting path</h2>
+    <div class="sub">30 seconds. We'll route your study plan, models, and questions to your target.</div>
+    <div class="quizbox">
+      <label>Target?</label>
+      <select id="q1"><option>Bulge bracket (GS/MS/JPM)</option><option>Elite boutique (Evercore/Centerview)</option><option>Middle market</option><option>Private Equity</option></select>
+      <label>Stage?</label>
+      <select id="q2"><option>Freshman/Sophomore</option><option>Junior (recruiting now)</option><option>Pre-MBA</option><option>MBA</option></select>
+      <label>Biggest gap?</label>
+      <select id="q3"><option>Modeling test</option><option>Technical questions</option><option>Behavioral/fit</option><option>Market knowledge</option></select>
+      <button onclick="fit()">Show my path</button>
+      <div class="result" id="res"></div>
+    </div>
+  </div>
+</section>
+
+<section class="paywall" id="join">
+  <div class="wrap">
+    <h2>Start with the free markets recap</h2>
+    <p>Every week: the deals and moves that matter, written so you can talk them in an interview. No fluff.</p>
+    <a class="cta alt" href="https://themodelroom.substack.com">Get the free recap →</a>
+    <p style="margin-top:16px;font-size:14px;color:#9fb0cc;">Then join the Vault for every model, question, and your target-bank study path — $19/mo, cancel anytime.</p>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <div>✓ Live models that balance</div>
+    <div>✓ Real, firm-tagged questions</div>
+    <div>✓ Weekly markets recap</div>
+    <div>✓ Built for your target</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    The Model Room — recruiting firepower for future bankers.
+    Questions? <a href="mailto:hello@themodelroom.com">hello@themodelroom.com</a> ·
+    <a href="#">Privacy</a> · <a href="#">Unsubscribe</a><br/>
+    © 2026 The Model Room. For education and interview prep; not investment advice.
+  </div>
+</footer>
+
+<script>
+function fit(){
+  var t=document.getElementById('q1').value;
+  var s=document.getElementById('q2').value;
+  var g=document.getElementById('q3').value;
+  var r=document.getElementById('res');
+  var msg="<strong>Your path:</strong> ";
+  if(t.indexOf('Boutique')>-1){ msg+="Focus on <strong>valuation + M&A accretion</strong> and hard technicals — elite boutiques go deeper. "; }
+  else if(t.indexOf('Private')>-1){ msg+="Prioritize the <strong>LBO + paper-LBO + case study</strong> sims. "; }
+  else { msg+="Nail the <strong>3-statements + core technicals</strong> first; that's the screen. "; }
+  if(g.indexOf('Modeling')>-1){ msg+="Start with the Modeling Test Pack. "; }
+  else if(g.indexOf('Technical')>-1){ msg+="Start with the Interview Question Bank. "; }
+  else if(g.indexOf('Behavioral')>-1){ msg+="Drill fit + 'tell me about a deal' via the weekly recap. "; }
+  else { msg+="Use the markets recap to build deal fluency. "; }
+  msg+="Stage: <em>"+s+"</em>. We've routed this to your personalized plan — join the Vault to unlock it.";
+  r.innerHTML=msg; r.style.display="block";
+}
+</script>
+</body>
+</html>
