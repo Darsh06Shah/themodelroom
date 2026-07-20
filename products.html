@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>The Model Room: what's inside the kits</title>
+<title>The Model Room: what is inside the kits</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{--navy:#1F2A44;--blue:#2E5AAC;--light:#EAF1FB;--grey:#555;--green:#1B7F4B;}
+  :root{--bg:#fbfbf8;--ink:#1c1c1a;--muted:#6f6f68;--rule:#e7e5dd;--accent:#9a5b34;}
   *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#222;line-height:1.6;}
-  .wrap{max-width:1000px;margin:0 auto;padding:0 22px;}
-  header{background:var(--navy);color:#fff;padding:18px 0;}
-  header a{color:#cdd9ee;text-decoration:none;font-size:14px;}
-  h1{font-size:34px;color:var(--navy);padding:40px 0 6px;}
-  .sub{color:var(--grey);margin-bottom:30px;}
-  .kit{background:#fff;border:1px solid #e3e9f2;border-radius:12px;padding:26px;margin-bottom:26px;}
-  .kit h2{color:var(--navy);font-size:22px;margin-bottom:4px;}
-  .price{color:var(--green);font-weight:800;font-size:20px;margin-bottom:16px;}
-  .box{background:var(--light);border:1px solid #dce6f5;border-radius:10px;padding:16px 18px;margin:10px 0;font-size:14.5px;}
-  .box b{color:var(--blue);}
-  ul{margin:6px 0 6px 20px;font-size:14px;color:#333;}
-  li{margin-bottom:5px;}
-  .q{background:#fff;border-left:4px solid var(--blue);border-radius:6px;padding:12px 16px;margin:10px 0;}
-  .q .t{font-weight:700;color:var(--navy);}
-  .q .a{color:#444;font-size:13.5px;margin-top:4px;}
-  footer{background:#0f1626;color:#9fb0cc;padding:26px 0;font-size:14px;margin-top:20px;}
-  footer a{color:#cdd9ee;}
+  body{font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px;}
+  .serif{font-family:"Source Serif 4",Georgia,serif;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px;}
+  header{border-bottom:1px solid var(--rule);}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:68px;}
+  .logo{font-family:"Source Serif 4",serif;font-weight:600;font-size:20px;}
+  nav a{color:var(--muted);text-decoration:none;margin-left:26px;font-size:15px;}
+  nav a:hover{color:var(--ink);}
+  section{padding:84px 0;border-top:1px solid var(--rule);}
+  h1{font-family:"Source Serif 4",serif;font-weight:500;font-size:clamp(2.2rem,4.6vw,3.2rem);letter-spacing:-.02em;padding:80px 0 8px;}
+  .lede{color:var(--muted);max-width:60ch;margin-bottom:48px;font-size:18px;}
+  .kit{padding:32px 0;border-top:2px solid var(--ink);margin-bottom:8px;}
+  .kit h2{font-family:"Source Serif 4",serif;font-weight:600;font-size:1.6rem;letter-spacing:-.01em;margin-bottom:4px;}
+  .price{font-family:"Source Serif 4",serif;font-size:22px;font-weight:600;color:var(--accent);margin-bottom:18px;}
+  .box{background:#fff;border:1px solid var(--rule);border-radius:8px;padding:18px 20px;margin:14px 0;font-size:15px;}
+  .box b{color:var(--ink);font-family:"Source Serif 4",serif;}
+  ul{margin:6px 0 6px 20px;font-size:15px;color:#333;}
+  li{margin-bottom:6px;}
+  .q{background:#fff;border:1px solid var(--rule);border-radius:8px;padding:16px 18px;margin:12px 0;}
+  .q .t{font-weight:600;font-family:"Source Serif 4",serif;}
+  .q .a{color:#444;font-size:14.5px;margin-top:5px;}
+  footer{border-top:1px solid var(--rule);padding:40px 0;color:var(--muted);font-size:14px;}
+  footer a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule);}
+  @media(max-width:760px){nav{display:none;}}
 </style></head><body>
-<header><div class="wrap"><a href="index.html">&larr; Back to The Model Room</a></div></header>
+<header><div class="wrap"><div class="logo">The Model Room</div><nav><a href="index.html">Home</a><a href="https://themodelroom.substack.com">Recaps</a></nav></div></header>
 <div class="wrap">
-<h1>What's inside the kits</h1>
-<div class="sub">Real files. Every line below is pulled straight from the actual workbook or deck, not a picture.</div>
+<h1>What is inside the kits</h1>
+<p class="lede">Real files. Every line below is pulled straight from the actual workbook or deck, not a picture.</p>
 
-<div class="kit">
-  <h2>Modeling Test Pack</h2>
-  <div class="price">$29 one-time</div>
-  <div class="box"><b>3-Statement Model</b> — tabs: Config, Assumptions, Income Statement, Balance Sheet, Cash Flow, README. Income statement rows:</div>
+<section>
+  <div class="kit"><h2>Modeling Test Pack</h2><div class="price">$29 one-time</div>
+  <div class="box"><b>3-Statement Model</b> tabs: Config, Assumptions, Income Statement, Balance Sheet, Cash Flow, README. Income statement rows:</div>
   <ul><li>Revenue</li>
 <li>  COGS</li>
 <li>Gross profit</li>
@@ -44,12 +51,11 @@
 <li>Pre-tax income (EBT)</li>
 <li>  Taxes</li>
 <li>Net income</li></ul>
-  <div class="box"><b>Finance Models workbook</b> tabs: LBO, DCF, Cap Table. Live outputs: LBO 4.39x MOIC / 34.4% IRR, DCF enterprise value 1,405, cap table 100%.</div>
-</div>
+  <div class="box"><b>Finance Models workbook</b> tabs: LBO, DCF, Cap Table. Live outputs: LBO 4.39x MOIC / 34.4% IRR, DCF enterprise value 1,405, cap table 100%.</div></div>
+</section>
 
-<div class="kit">
-  <h2>Interview Question Bank</h2>
-  <div class="price">$19 one-time</div>
+<section>
+  <div class="kit"><h2>Interview Question Bank</h2><div class="price">$19 one-time</div>
   <div class="box">Real questions, tagged by firm and difficulty. Sample:</div>
   <div class="q"><div class="t">Walk me through the three financial statements.</div><div class="a">Income Statement (revenue→net income), Balance Sheet (assets=liabilities+equity), Cash Flow (CFO+CFI+CFF). Net income flows from IS to BS retained earnings and ...</div></div>
 <div class="q"><div class="t">A $10 increase in depreciation — walk through the impact on all three statements.</div><div class="a">IS: pre-tax income -$10, net income -$7.50 (at 25%). CF: +$10 add-back → net cash +$2.50. BS: cash +$2.50, PP&amp;E -$10 (net), retained earnings -$7.50. Assets and...</div></div>
@@ -57,11 +63,10 @@
 <div class="q"><div class="t">What happens if a company issues $100 of debt to buy back stock?</div><div class="a">IS: interest expense up (reduces NI slightly). CF: CFF +$100 (debt) -$100 (buyback). BS: cash +$100 then -$100, debt +$100, equity -$100. Net: L+E unchanged, le...</div></div>
 <div class="q"><div class="t">Compare DCF, comparable companies, and precedent transactions. When does each give the highest value?</div><div class="a">DCF reflects standalone intrinsic value (highest when growth/FCF strong and rates low). Comps reflect current market mood. Precedents include control premiums (...</div></div>
 <div class="q"><div class="t">Walk me through a DCF. What are the key drivers?</div><div class="a">Project unlevered FCF, discount at WACC, add terminal value (Gordon growth or exit multiple). Key drivers: revenue growth, margins, WACC, terminal growth. Sensi...</div></div>
-</div>
+</section>
 
-<div class="kit">
-  <h2>Pitch Deck / Deal Teardown</h2>
-  <div class="price">$14 one-time</div>
+<section>
+  <div class="kit"><h2>Pitch Deck / Deal Teardown</h2><div class="price">$14 one-time</div>
   <div class="box"><b>Deck slides (bank-style 16:9):</b></div>
   <ul><li><b>Slide 1:</b> {{COMPANY NAME}} | {{One-line: what you do, for whom, why now}} | Confidential — {{Month Y</li>
 <li><b>Slide 2:</b> 1 · The Problem | {{Pain point #1 — who feels it, how often, what it costs them}}</li>
@@ -71,15 +76,13 @@
 <li><b>Slide 6:</b> 5 · Business Model | Pricing: {{tier 1}} / {{tier 2}} / {{tier 3}}</li>
 <li><b>Slide 7:</b> 6 · Team | {{Founder 1}} — {{relevant edge, e.g. 'built $X models at [bank]'}}</li>
 <li><b>Slide 8:</b> The Ask | Raising ${{amount}} {{round}} | Use of funds: {{% product}} / {{% GTM}} / {{% op</li>
-<li><b>Slide 9:</b> Appendix · How we model it | Built the way banks build it — full three-statement integrity</li></ul>
-</div>
+<li><b>Slide 9:</b> Appendix · How we model it | Built the way banks build it — full three-statement integrity</li></ul></div>
+</section>
 
-<div class="kit">
-  <h2>The Full Vault (membership)</h2>
-  <div class="price">$19 / month</div>
-  <div class="box">Everything above, plus the weekly markets recap, new model and question drops, and your target-bank study path.</div>
-</div>
-
+<section>
+  <div class="kit"><h2>The Full Vault (membership)</h2><div class="price">$19 / month</div>
+  <div class="box">Everything above, plus the weekly markets recap, new model and question drops, and your target-bank study path.</div></div>
+</section>
 </div>
 <footer><div class="wrap">The Model Room. Recruiting firepower for future bankers. <a href="mailto:hello@themodelroom.com">hello@themodelroom.com</a></div></footer>
 </body></html>

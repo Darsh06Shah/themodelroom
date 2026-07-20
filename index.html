@@ -3,156 +3,154 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>The Model Room: Land the banking offer. Real models, real interview questions, real markets.</title>
+<title>The Model Room: Land the banking offer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{--navy:#1F2A44;--blue:#2E5AAC;--light:#EAF1FB;--grey:#555;--green:#1B7F4B;--amber:#B8860B;}
+  :root{
+    --bg:#fbfbf8; --ink:#1c1c1a; --muted:#6f6f68; --rule:#e7e5dd; --accent:#9a5b34;
+  }
   *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#222;line-height:1.6;}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 22px;}
-  header{background:var(--navy);color:#fff;padding:18px 0;}
-  header .wrap{display:flex;justify-content:space-between;align-items:center;}
-  .logo{font-weight:800;font-size:20px;letter-spacing:.5px;}
-  .logo span{color:#7FA8E8;}
-  nav a{color:#cdd9ee;text-decoration:none;margin-left:20px;font-size:14px;}
-  nav a:hover{color:#fff;}
-  .hero{background:linear-gradient(135deg,var(--navy),#33476f);color:#fff;padding:70px 0 60px;}
-  .hero h1{font-size:44px;line-height:1.12;font-weight:800;max-width:780px;}
-  .hero h1 em{color:#9DC0FF;font-style:normal;}
-  .hero p{font-size:19px;color:#d6e2f5;margin:20px 0 30px;max-width:660px;}
-  .cta{display:inline-block;background:#fff;color:var(--navy);font-weight:700;padding:15px 30px;border-radius:8px;text-decoration:none;font-size:16px;}
-  .cta:hover{background:#e6ecf7;}
-  .cta.alt{background:var(--amber);color:#fff;}
-  .pill{display:inline-block;background:rgba(255,255,255,.12);color:#cfe0fb;padding:6px 14px;border-radius:99px;font-size:13px;margin-bottom:18px;}
-  .diff{padding:60px 0;background:#fff;}
-  .diff h2{font-size:30px;color:var(--navy);margin-bottom:8px;}
-  .diff .sub{color:var(--grey);margin-bottom:36px;font-size:17px;max-width:680px;}
-  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
-  .card{background:var(--light);border-radius:12px;padding:24px;border:1px solid #dce6f5;}
-  .card h3{color:var(--blue);font-size:19px;margin-bottom:8px;}
-  .card p{color:#444;font-size:14.5px;}
-  .num{display:inline-flex;width:32px;height:32px;background:var(--navy);color:#fff;border-radius:8px;align-items:center;justify-content:center;font-weight:700;margin-right:9px;}
-  .prod{padding:60px 0;background:#f7f9fc;}
-  .prod h2{font-size:30px;color:var(--navy);margin-bottom:6px;}
-  .prod .sub{color:var(--grey);margin-bottom:32px;font-size:17px;}
-  .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-  .p{background:#fff;border:1px solid #e3e9f2;border-radius:12px;padding:24px;}
-  .p h4{color:var(--navy);font-size:17px;margin-bottom:7px;}
-  .p p{color:#555;font-size:13.5px;margin-bottom:10px;}
-  .p ul{margin:0 0 12px 18px;color:#555;font-size:13px;}
-  .p li{margin-bottom:3px;}
-  .price{font-size:25px;font-weight:800;color:var(--green);}
-  .price small{font-size:12px;color:#888;font-weight:500;}
-  .qof{padding:60px 0;background:#fff;}
-  .qof h2{font-size:30px;color:var(--navy);margin-bottom:6px;}
-  .qof .sub{color:var(--grey);margin-bottom:26px;font-size:16px;}
-  .qbox{background:var(--light);border:1px solid #dce6f5;border-radius:14px;padding:26px;}
-  .qbox .q{font-size:19px;font-weight:700;color:var(--navy);margin-bottom:10px;}
-  .qbox .a{color:#333;font-size:15px;}
-  .qbox .tag{display:inline-block;background:var(--navy);color:#fff;font-size:12px;padding:3px 10px;border-radius:99px;margin-right:6px;margin-top:12px;}
-  .news{padding:60px 0;background:#f7f9fc;}
-  .news h2{font-size:30px;color:var(--navy);margin-bottom:6px;}
-  .news .sub{color:var(--grey);margin-bottom:28px;font-size:16px;}
-  .nb{background:#fff;border-left:4px solid var(--blue);border-radius:8px;padding:18px 22px;margin-bottom:14px;}
-  .nb h4{color:var(--navy);font-size:16px;margin-bottom:4px;}
-  .nb p{color:#555;font-size:14px;}
-  .quiz{background:#fff;padding:60px 0;}
-  .quiz h2{font-size:28px;color:var(--navy);margin-bottom:6px;}
-  .quiz .sub{color:var(--grey);margin-bottom:24px;font-size:15px;}
-  .quizbox{max-width:620px;background:var(--light);padding:28px;border-radius:14px;border:1px solid #dce6f5;width:100%;}
-  .quiz label{display:block;font-weight:600;color:var(--navy);margin:14px 0 6px;}
-  .quiz select,.quiz input{width:100%;padding:11px;border:1px solid #c3d2e8;border-radius:8px;font-size:15px;}
-  .quiz button{margin-top:20px;background:var(--blue);color:#fff;border:0;padding:13px 26px;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;}
-  .result{margin-top:18px;padding:16px;background:#fff;border:1px dashed var(--blue);border-radius:10px;display:none;color:#222;}
-  .paywall{background:var(--navy);color:#fff;padding:60px 0;text-align:center;}
-  .paywall h2{font-size:32px;margin-bottom:12px;}
-  .paywall p{color:#cdd9ee;font-size:18px;margin-bottom:26px;}
-  .trust{background:#fff;padding:28px 0;border-top:1px solid #eee;}
-  .trust .wrap{display:flex;gap:26px;flex-wrap:wrap;justify-content:center;color:var(--grey);font-size:14px;}
-  footer{background:#0f1626;color:#9fb0cc;padding:32px 0;font-size:14px;}
-  footer a{color:#cdd9ee;}
-  @media(max-width:760px){.grid,.pgrid{grid-template-columns:1fr;}.hero h1{font-size:32px;}nav{display:none;}}
+  html{-webkit-font-smoothing:antialiased;}
+  body{font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px;}
+  .serif{font-family:"Source Serif 4",Georgia,"Times New Roman",serif;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px;}
+  a{color:inherit;}
+  header{border-bottom:1px solid var(--rule);}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:68px;}
+  .logo{font-family:"Source Serif 4",serif;font-weight:600;font-size:20px;letter-spacing:-.01em;}
+  nav a{color:var(--muted);text-decoration:none;margin-left:26px;font-size:15px;}
+  nav a:hover{color:var(--ink);}
+  .hero{padding:104px 0 84px;}
+  .hero h1{font-family:"Source Serif 4",serif;font-weight:500;font-size:clamp(2.4rem,5.4vw,4rem);line-height:1.04;letter-spacing:-.02em;max-width:15ch;}
+  .hero h1 em{font-style:italic;font-weight:400;}
+  .hero p{margin:28px 0 36px;max-width:54ch;color:var(--muted);font-size:19px;}
+  .links a{margin-right:28px;font-weight:500;font-size:16px;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:3px;}
+  .links a.ghost{border-bottom:none;color:var(--muted);}
+  .links a.ghost:hover{color:var(--ink);}
+  section{padding:84px 0;border-top:1px solid var(--rule);}
+  h2{font-family:"Source Serif 4",serif;font-weight:600;font-size:clamp(1.7rem,3vw,2.1rem);letter-spacing:-.01em;margin-bottom:10px;}
+  .lede{color:var(--muted);max-width:58ch;margin-bottom:48px;font-size:18px;}
+  .grid4{display:grid;grid-template-columns:repeat(2,1fr);gap:0 56px;}
+  .item{padding:28px 0;border-top:1px solid var(--rule);}
+  .item .n{font-family:"Source Serif 4",serif;font-size:15px;color:var(--accent);margin-bottom:8px;}
+  .item h3{font-family:"Source Serif 4",serif;font-weight:600;font-size:20px;margin-bottom:6px;letter-spacing:-.01em;}
+  .item p{color:var(--muted);font-size:15.5px;}
+  .qbox{padding:40px 0;}
+  .qbox .q{font-family:"Source Serif 4",serif;font-weight:500;font-style:italic;font-size:clamp(1.4rem,2.6vw,1.9rem);line-height:1.3;letter-spacing:-.01em;max-width:30ch;margin-bottom:22px;}
+  .qbox .a{color:#333;max-width:62ch;font-size:17px;}
+  .tags{margin-top:20px;}
+  .tags span{font-size:13px;color:var(--muted);border:1px solid var(--rule);padding:4px 11px;border-radius:99px;margin-right:7px;display:inline-block;}
+  .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;}
+  .p{padding:30px 28px 30px 0;border-top:2px solid var(--ink);}
+  .p h4{font-family:"Source Serif 4",serif;font-weight:600;font-size:19px;margin-bottom:10px;}
+  .p p{color:var(--muted);font-size:14.5px;margin-bottom:14px;}
+  .p ul{margin:0 0 16px 18px;color:var(--muted);font-size:14px;}
+  .p li{margin-bottom:5px;}
+  .price{font-family:"Source Serif 4",serif;font-size:22px;font-weight:600;}
+  .price small{font-family:"Inter",sans-serif;font-size:12px;color:var(--muted);font-weight:500;}
+  .vault{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;padding:32px 0 0;border-top:2px solid var(--ink);margin-top:8px;}
+  .vault strong{font-family:"Source Serif 4",serif;font-size:20px;}
+  .vault span{color:var(--muted);font-size:15px;}
+  .nb{padding:22px 0;border-top:1px solid var(--rule);}
+  .nb h4{font-family:"Source Serif 4",serif;font-weight:600;font-size:17px;margin-bottom:5px;}
+  .nb p{color:var(--muted);font-size:15px;}
+  .quizbox{max-width:620px;padding:32px 0;}
+  .quiz label{display:block;font-weight:500;color:var(--ink);margin:16px 0 7px;font-size:15px;}
+  .quiz select{width:100%;padding:12px;border:1px solid var(--rule);border-radius:6px;font-size:15px;background:#fff;font-family:inherit;}
+  .quiz button{margin-top:22px;background:var(--ink);color:#fff;border:0;padding:13px 26px;border-radius:6px;font-size:15px;font-weight:500;cursor:pointer;font-family:inherit;}
+  .result{margin-top:18px;padding:18px;background:#fff;border:1px solid var(--rule);border-radius:8px;display:none;color:#222;font-size:15px;}
+  .center{text-align:center;padding:96px 0;}
+  .center p{color:var(--muted);max-width:50ch;margin:18px auto 30px;font-size:18px;}
+  .btn{display:inline-block;background:var(--ink);color:#fff;padding:14px 28px;border-radius:6px;font-weight:500;font-size:15px;text-decoration:none;}
+  .btn:hover{background:#000;}
+  footer{border-top:1px solid var(--rule);padding:40px 0;color:var(--muted);font-size:14px;}
+  footer a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule);}
+  @media(max-width:760px){.grid4,.pgrid{grid-template-columns:1fr;}.hero{padding:64px 0 52px;}nav{display:none;}.p{padding-right:0;}}
 </style>
 </head>
 <body>
 <header>
   <div class="wrap">
-    <div class="logo">The Model<span>Room</span></div>
-    <nav><a href="#diff">Why us</a><a href="#products">Kits</a><a href="#qof">Questions</a><a href="#news">Markets</a><a href="#quiz">Your path</a><a href="#join">Join</a></nav>
+    <div class="logo">The Model Room</div>
+    <nav><a href="#why">Why us</a><a href="#kits">Kits</a><a href="#q">Questions</a><a href="#markets">Markets</a><a href="#path">Your path</a><a href="https://themodelroom.substack.com">Recaps</a></nav>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap">
-    <div class="pill">For students recruiting into investment banking</div>
-    <h1>Land the banking offer.<br/><em>Real models. Real interview questions. Real markets.</em></h1>
-    <p>We've sat the superday. The modeling test that ties out, the technicals firms actually ask, and a weekly markets recap so you can talk deals like you follow them. All in one place.</p>
-    <a class="cta" href="products.html">See the kits</a>
-    <a class="cta alt" href="https://themodelroom.substack.com" style="margin-left:12px;">Free markets recap</a>
+    <h1>Land the banking offer. <em>Real models. Real questions. Real markets.</em></h1>
+    <p>We have sat the superday. This is the modeling test that ties out, the technicals firms actually ask, and a weekly markets recap so you can talk deals like you follow them. All in one place.</p>
+    <div class="links">
+      <a href="#kits">See the kits</a>
+      <a class="ghost" href="https://themodelroom.substack.com">Free markets recap</a>
+    </div>
   </div>
 </section>
 
-<section class="diff" id="diff">
+<section id="why">
   <div class="wrap">
     <h2>Why recruits use The Model Room</h2>
-    <div class="sub">We built this because the $500 courses are a ripoff and the free templates don't balance. We help you get the offer.</div>
-    <div class="grid">
-      <div class="card"><h3><span class="num">1</span>Models that tie out</h3><p>The 3-statement, LBO and DCF set is live and balances to zero. That is what the modeling test grades. Not a screenshot someone screenshotted.</p></div>
-      <div class="card"><h3><span class="num">2</span>Real questions, by firm</h3><p>Interview questions people actually got asked at GS, MS, JPM, Evercore, Centerview, KKR and Blackstone. Each comes with the answer the interviewer is looking for.</p></div>
-      <div class="card"><h3><span class="num">3</span>Markets you can talk about</h3><p>A weekly recap of the deals that moved. So when they say "tell me about a deal you found interesting," you're not sitting there blank.</p></div>
-      <div class="card"><h3><span class="num">4</span>Built for your path</h3><p>Set your target on the quiz (bulge bracket, elite boutique or PE) and we point you to the right study plan, models and questions.</p></div>
+    <p class="lede">We built this because the $500 courses are a ripoff and the free templates do not balance. We help you get the offer.</p>
+    <div class="grid4">
+      <div class="item"><div class="n">01</div><h3>Models that tie out</h3><p>The 3-statement, LBO and DCF set is live and balances to zero. That is what the modeling test grades. Not a screenshot someone screenshotted.</p></div>
+      <div class="item"><div class="n">02</div><h3>Real questions, by firm</h3><p>Interview questions people actually got asked at GS, MS, JPM, Evercore, Centerview, KKR and Blackstone. Each comes with the answer the interviewer is looking for.</p></div>
+      <div class="item"><div class="n">03</div><h3>Markets you can talk about</h3><p>A weekly recap of the deals that moved. So when they say "tell me about a deal you found interesting," you are not sitting there blank.</p></div>
+      <div class="item"><div class="n">04</div><h3>Built for your path</h3><p>Set your target on the quiz (bulge bracket, elite boutique or PE) and we point you to the right study plan, models and questions.</p></div>
     </div>
   </div>
 </section>
 
-<section class="qof" id="qof">
+<section id="q">
   <div class="wrap">
     <h2>Question of the week</h2>
-    <div class="sub">Pulled from real interviews. The full bank is in the vault, tagged by firm.</div>
+    <p class="lede">Pulled from real interviews. The full bank is in the vault, tagged by firm.</p>
     <div class="qbox">
       <div class="q">"A $10 increase in depreciation. Walk me through the impact on all three statements."</div>
-      <div class="a"><strong>Answer:</strong> Income statement, pre-tax income falls $10, net income falls $7.50 at a 25% rate. Cash flow, add back the $10 depreciation, so net cash up $2.50. Balance sheet, cash up $2.50, PP&E (net) down $10, retained earnings down $7.50. Both sides drop $7.50. It balances. <em>This is the most-asked technical. Most people miss the second-order cash tax effect.</em></div>
-      <span class="tag">3-Statements</span><span class="tag">Core</span><span class="tag">All banks</span>
+      <div class="a">Income statement, pre-tax income falls $10, net income falls $7.50 at a 25% rate. Cash flow, add back the $10 depreciation, so net cash up $2.50. Balance sheet, cash up $2.50, PP&E (net) down $10, retained earnings down $7.50. Both sides drop $7.50. It balances. This is the most-asked technical. Most people miss the second-order cash tax effect.</div>
+      <div class="tags"><span>3-Statements</span><span>Core</span><span>All banks</span></div>
     </div>
   </div>
 </section>
 
-<section class="prod" id="products">
+<section id="kits">
   <div class="wrap">
     <h2>The Recruiting Kits</h2>
-    <div class="sub">Every file is live. Change one assumption and everything recalcs. Instant download.</div>
+    <p class="lede">Every file is live. Change one assumption and everything recalcs. Instant download.</p>
     <div class="pgrid">
       <div class="p"><h4>Modeling Test Pack</h4><p>The exact structure your superday gives you.</p>
         <ul><li>3-statement model (live, balances to zero)</li><li>LBO model with MOIC and IRR</li><li>DCF with WACC and terminal value</li><li>Cap table by round</li></ul>
-        <div class="price">$29<small> one-time</small></div></div>
+        <div class="price">$29 <small>one-time</small></div></div>
       <div class="p"><h4>Interview Question Bank</h4><p>Questions people actually got asked, with the answer.</p>
-        <ul><li>20+ technical and behavioral questions</li><li>Tagged by firm (GS, MS, JPM, Evercore, KKR)</li><li>Tagged by difficulty (Core or Hard)</li><li>Model-backed answers</li></ul>
-        <div class="price">$19<small> one-time</small></div></div>
+        <ul><li>26 technical and behavioral questions</li><li>Tagged by firm (GS, MS, JPM, Evercore, KKR)</li><li>Tagged by difficulty (Core or Hard)</li><li>Model-backed answers</li></ul>
+        <div class="price">$19 <small>one-time</small></div></div>
       <div class="p"><h4>Pitch Deck / Deal Teardown</h4><p>A deck you can drop your story into, plus a real deal.</p>
         <ul><li>Bank-style 16:9 template</li><li>Real M&A teardown you can cite</li><li>Talking points for "a deal you found interesting"</li></ul>
-        <div class="price">$14<small> one-time</small></div></div>
+        <div class="price">$14 <small>one-time</small></div></div>
     </div>
-    <div style="margin-top:30px;background:#fff;border:1px solid #e3e9f2;border-radius:12px;padding:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;">
-      <div><strong style="color:var(--navy);font-size:19px;">The Full Vault, membership</strong><br/><span style="color:var(--grey);">All kits, the weekly markets recap, new model and question drops, and your target-bank study path.</span></div>
-      <div style="text-align:right;"><span class="price">$19<small>/mo</small></span> &nbsp; <a class="cta alt" href="https://gumroad.com/themodelroom" style="font-size:15px;padding:12px 22px;">Join</a></div>
+    <div class="vault">
+      <div><strong>The Full Vault, membership</strong><br/><span>All kits, the weekly markets recap, new model and question drops, and your target-bank study path.</span></div>
+      <div><span class="price">$19 <small>/mo</small></span> &nbsp; <a class="btn" href="https://gumroad.com/themodelroom">Join</a></div>
     </div>
   </div>
 </section>
 
-<section class="news" id="news">
+<section id="markets">
   <div class="wrap">
     <h2>Markets recap for people who need to sound sharp</h2>
-    <div class="sub">Every week in the free newsletter: 5 deals, 3 charts, 1 theme. So you can talk markets in any interview.</div>
+    <p class="lede">Every week in the free newsletter: 5 deals, 3 charts, 1 theme. So you can talk markets in any interview.</p>
     <div class="nb"><h4>This week: M&A is back</h4><p>Megadeal volume up about 30% quarter over quarter as rate-cut expectations return. Boutiques are gaining share in tech and advisory. Know one or two names cold.</p></div>
     <div class="nb"><h4>Chart to cite: the exit-multiple vs. rate trade</h4><p>Lower rates mean higher EV/EBITDA. Be ready to explain why a DCF and a comps approach diverge right now.</p></div>
-    <div class="nb"><h4>Behavioral gold: "a deal you found interesting"</h4><p>Pick a live deal in your target bank's sector. We give you the talking points each week so you're never blank.</p></div>
-    <a class="cta alt" href="https://themodelroom.substack.com" style="margin-top:8px;">Read the free recap</a>
+    <div class="nb"><h4>Behavioral gold: "a deal you found interesting"</h4><p>Pick a live deal in your target bank's sector. We give you the talking points each week so you are never blank.</p></div>
+    <div style="margin-top:28px;"><a href="https://themodelroom.substack.com" style="font-weight:500;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:3px;">Read the free recap</a></div>
   </div>
 </section>
 
-<section class="quiz" id="quiz">
+<section id="path">
   <div class="wrap">
     <h2>Your recruiting path</h2>
-    <div class="sub">30 seconds. We'll point your study plan, models and questions at your target.</div>
+    <p class="lede">30 seconds. We will point your study plan, models and questions at your target.</p>
     <div class="quizbox">
       <label>Target?</label>
       <select id="q1"><option>Bulge bracket (GS/MS/JPM)</option><option>Elite boutique (Evercore/Centerview)</option><option>Middle market</option><option>Private Equity</option></select>
@@ -166,29 +164,18 @@
   </div>
 </section>
 
-<section class="paywall" id="join">
+<section class="center">
   <div class="wrap">
     <h2>Start with the free markets recap</h2>
     <p>Every week: the deals and moves that matter, written so you can talk about them in an interview. No fluff.</p>
-    <a class="cta alt" href="https://themodelroom.substack.com">Get the free recap</a>
-    <p style="margin-top:16px;font-size:14px;color:#9fb0cc;">Then join the Vault for every model, question and your target-bank study path. $19 a month, cancel anytime.</p>
-  </div>
-</section>
-
-<section class="trust">
-  <div class="wrap">
-    <div>Live models that balance</div>
-    <div>Real, firm-tagged questions</div>
-    <div>Weekly markets recap</div>
-    <div>Built for your target</div>
+    <a class="btn" href="https://themodelroom.substack.com">Get the free recap</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     The Model Room. Recruiting firepower for future bankers.
-    Questions? <a href="mailto:hello@themodelroom.com">hello@themodelroom.com</a> ·
-    <a href="#">Privacy</a> · <a href="#">Unsubscribe</a><br/>
+    Questions? <a href="mailto:hello@themodelroom.com">hello@themodelroom.com</a><br/>
     © 2026 The Model Room. For education and interview prep; not investment advice.
   </div>
 </footer>
@@ -207,7 +194,7 @@ function fit(){
   else if(g.indexOf('Technical')>-1){ msg+="Start with the Interview Question Bank. "; }
   else if(g.indexOf('Behavioral')>-1){ msg+="Drill fit and 'tell me about a deal' via the weekly recap. "; }
   else { msg+="Use the markets recap to build deal fluency. "; }
-  msg+="Stage: <em>"+s+"</em>. We've routed this to your plan. Join the Vault to unlock it.";
+  msg+="Stage: <em>"+s+"</em>. We have routed this to your plan. Join the Vault to unlock it.";
   r.innerHTML=msg; r.style.display="block";
 }
 </script>
